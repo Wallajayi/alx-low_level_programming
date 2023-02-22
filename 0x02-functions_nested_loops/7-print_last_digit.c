@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * main - entry point
- * Description: "Function that prints last digit"
+ * print_last_digit - Function that prints last digit
  *
  * @i: parameter to be checked
  * Return: k

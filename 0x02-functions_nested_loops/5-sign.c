@@ -1,4 +1,9 @@
 #include "main.h"
+/**
+ * print_sign - To print integer
+ * @n: character to be printed
+ * Return: always 0
+ */
 
 int print_sign(int n)
 {
