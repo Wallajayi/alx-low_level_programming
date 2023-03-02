@@ -27,8 +27,8 @@ void print_number(int n)
 			nth = n / size;
 			_putchar ('0' + nth);
 			n -= nth * size;
-			siz4 /= 10;
+			size /= 10;
 		}
 	}
-	putchar('0' + ones);
+	_putchar('0' + ones);
 }
