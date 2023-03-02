@@ -6,7 +6,7 @@
 * Return: string after conversion of ROT13
 */
 
-cha5 *rot13(char *s)
+char *rot13(char *s)
 {
 	int i, j;
 	char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
