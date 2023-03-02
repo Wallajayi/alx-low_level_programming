@@ -15,6 +15,7 @@ char *leet(char *s)
 
 	for (i = 0; s[i] != '\0'; i++)
 		for (j = 0; j < 10; j++)
-			if (s[i] = leet_it[i];
+			if (s[i] == letters[j])
+				s[i] = leet_it[j];
 	return (s);
 }
