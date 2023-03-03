@@ -34,7 +34,7 @@ void print_buffer(char *b, int size)
 			{
 				printf("%c", *(b + i) > 31 && *(b + i) < 127 ? *(b + i) : '.');
 				count++;
-				i++
+				i++;
 			}
 			if (j < size - 10)
 				printf("\n");
