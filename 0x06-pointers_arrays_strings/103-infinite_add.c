@@ -26,7 +26,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	for (j = 0, i = len1 - 1; j < len1; j++, i--)
 		n1c[j] = n1[i];
 	n1c[j] = '\0';
-	for (j = 0, i = len2 - 1; j < len2; j++ i--)
+	for (j = 0, i = len2 - 1; j < len2; j++, i--)
 		n2c[j] = n2[i];
 	n2c[j] = '\0';
 	while (num < size_r - 1)
