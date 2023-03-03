@@ -36,7 +36,7 @@ void print_buffer(char *b, int size)
 				count++;
 				i++
 			}
-			if (j < siz4 - 10)
+			if (j < size - 10)
 				printf("\n");
 		j += 10;
 	}
