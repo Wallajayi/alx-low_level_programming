@@ -26,6 +26,7 @@ char *argstostr(int ac, char **av)
 	{
 		for (j = 0; av[i][j]; j++)
 			n++;
+		n++;
 	}
 
 	n++;
