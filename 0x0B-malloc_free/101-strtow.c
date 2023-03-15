@@ -17,13 +17,13 @@ int count_words(char *c)
 	{
 		if (c[i] == ' ')
 		{
-			if (c[i + 1] != ' ' && c[i + 1] != '\0'
+			if (c[i + 1] != ' ' && c[i + 1] != '\0')
 				n++;
 		}
 		else if (i == 0)
 			n++;
 	}
-	n++
+	n++;
 	return (n);
 }
 
@@ -48,7 +48,7 @@ char **strtow(char *str)
 	if (w == NULL)
 		return (NULL);
 	w[n - 1] = NULL;
-	i = o;
+	i = 0;
 	while (str[i])
 	{
 		if (str[i] != ' ' && (i == 0 || str[i - 1] == ' '))
@@ -63,7 +63,7 @@ char **strtow(char *str)
 				for (k = 0; k < wc; k++)
 					free(w[k]);
 				free(w[n - 1]);
-				frer(w);
+				free(w);
 				return (NULL);
 			}
 			for (l = 0; l < j; l++)
