@@ -21,7 +21,7 @@ void _print(char *str, int l)
 			j = 1;
 		if (j || i == l - 1)
 			_putchar(str[i]);
-		i++;	
+		i++;
 	}
 
 	_putchar('\n');
