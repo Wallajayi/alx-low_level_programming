@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "main"
+#include "main.h"
 #include <stdio.h>
 
 /**
@@ -12,7 +12,7 @@
 
 void _print(char *str, int l)
 {
-	int i, j:
+	int i, j;
 
 	i = j = 0;
 	while (i < l)
@@ -21,11 +21,12 @@ void _print(char *str, int l)
 			j = 1;
 		if (j || i == l - 1)
 			_putchar(str[i]);
-		i++;
+		i++;	
 	}
 
 	_putchar('\n');
 	free(str);
+}
 
 /**
  * mul - multiplies a char with a string and places the answer into dest
@@ -51,7 +52,7 @@ char *mul(char n, char *num, int num_index, char *dest, int dest_index)
 		addrem = add / 10;
 		dest[k] = add % 10 + '0';
 	}
-	for (addrem += mulrem; k >= 0 && adrem; k--)
+	for (addrem += mulrem; k >= 0 && addrem; k--)
 	{
 		add = (dest[k] - '0') + addrem;
 		addrem = add / 10;
@@ -90,7 +91,7 @@ int check_for_digits(char **av)
  * init - initializes a string
  * @str: string to initialize
  * @l: length of string
- * 
+ *
  * Return: void
  */
 
@@ -105,13 +106,13 @@ void init(char *str, int l)
 
 /**
  * main - multiply two numbers
- * argc: number of arguments
- * argv: argument vector
+ * @argc: number of arguments
+ * @argv: argument vector
  *
  * Return: Zero, or exit status of 98 if failure
  */
 
-int main (int argc, char *argv[1])
+int main(int argc, char *argv[1])
 {
 	int l1, l2, ln, ti, i;
 	char *a;
@@ -136,7 +137,7 @@ int main (int argc, char *argv[1])
 			_putchar(e[ti]);
 		exit(98);
 	}
-	init (a, ln - 1);
+	init(a, ln - 1);
 	for (ti = l2 - 1, i = 0; ti >= 0; ti--, i++)
 	{
 		t = mul(argv[2][ti], argv[1], l1 - 1, a, (ln - 2) - i);
@@ -148,6 +149,6 @@ int main (int argc, char *argv[1])
 			exit(98);
 		}
 	}
-	print(a, ln - 1);
+	_print(a, ln - 1);
 	return (0);
 }
